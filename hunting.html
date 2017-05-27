@@ -1,0 +1,96 @@
+<?php
+$pageUrl = "";
+$pageTitle = "Hunting";
+$description = "サービスの説明文";
+if($cmp_flag==1){
+$shareText = "シェアテキスト";
+}
+$keywords = "fashion";
+$encodePageUrl = urlencode ($pageUrl);
+$encodeShareUrl = urlencode ($shareText);
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>Hunting</title>
+<meta name="description" content="<?php echo $description; ?>">
+<meta name="keywords" content="<?php echo $keywords; ?>">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta property="og:title" content="<?php echo $shareText; ?>">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:url" content="<?php echo $pageUrl; ?>">
+<meta property="og:image" content="<?php echo $ogUrl; ?>">
+<meta property="og:description" content="<?php echo $description; ?>"/>
+
+<link rel="stylesheet" href="/css/reset.css" media="all">
+<link rel="stylesheet" href="<?php echo $imageUrl; ?>css/move-min.css">
+<mt:TimeDispForm to="2017/03/31 23:59:59">
+
+</head>
+<body>
+
+<!-- fb module -->
+<div id="fb-root"></div>
+<script>
+window.fbAsyncInit = function() {
+	FB.init({
+		appId      : '187588564737402',
+		channelUrl : '//wallet.yahoo.co.jp/promotion/channel.html',
+		status     : true,
+		cookie     : true,
+		xfbml      : true,
+  version: 'v2.8'
+	});
+
+};
+(function(d, s, id) {
+	var js, fjs = d.getElementsByTagName(s)[0];
+	if (d.getElementById(id)) return;
+	js = d.createElement(s); js.id = id;
+	js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.6";
+	fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+<!-- /fb module -->
+
+  <header class="" id="">
+  </header>
+<div class='loadingWrap'>
+  <div class="loader">Loading...</div>
+</div>
+
+<div class="wrapper">
+    <div class="footer">
+      <div class="footer_inner">
+
+        </p>
+        <div class="bx_sns"  id="sns_area">
+        <ul>
+          <li style="vertical-align: text-bottom;">
+          <a href="http://line.me/R/msg/text/?<?php echo$encodeShareUrl  ?>%0d%0a<?php echo$encodePageUrl  ?>" data-ylk="slk:line;pos:0"><img src="<?php echo $imageUrl; ?>images/line_82x20.png" alt="line" width="88px"></a>
+          </li>
+          <li class="sns-button fb">
+            <div class="fb-share-button" data-href="<?php echo $pageUrl; ?>" data-type="button" data-ylk="slk:fb;pos:0" ></div>
+          </li>
+          <li class="tw">
+            <a class="twitter-share-button" href="https://twitter.com/share"
+              data-url="<?php echo $pageUrl; ?>"
+              data-text="<?php echo $shareText; ?>"
+              data-lang="ja" data-ylk="slk:twitter;pos:0">
+              ツイート
+            </a>
+            <script type="text/javascript" src="https://platform.twitter.com/widgets.js" charsest="utf-8"></script>
+          </li>
+        </ul>
+      </div>
+  </div>
+  </div>
+</div>
+
+</body>
+<script src="https://s.yimg.jp/l/jquery/2.2.0/jquery.min.js"></script>
+
+</html>

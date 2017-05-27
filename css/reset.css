@@ -1,0 +1,97 @@
+/* HTML5 display definitions
+==========================
+/*
+* Corrects block display not defined in IE6/7/8/9 & FF3
+*/
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary {
+  display: block;
+}
+/*
+* Corrects inline-block display not defined in IE6/7/8/9 & FF3
+*/
+audio,canvas,video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+
+/* reset
+==================== */
+body{
+  margin: 0;
+  padding: 0;
+  font-family:"ヒラギノ角ゴ Pro W3", Hiragino Kaku Gothic Pro, Osaka, "ＭＳ Ｐゴシック", sans-serif;
+  color: #333;
+}
+dl, dt, dd, ul, ol, li,h1, h2, h3, h4, h5, h6,form, fieldset, input,p, blockquote, pre, div, figure {
+  margin: 0;
+  padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+table {
+  margin: 0;
+  padding: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 100%;
+}
+caption {
+  text-align: left;
+}
+select, input, textarea,pre, code, kbd, var, ins, del, samp {
+  font-size: 100%;
+}
+address, cite, dfn, em, strong, var, th, ins, del, samp {
+  font-weight: normal;
+  font-style: normal;
+}
+fieldset, img {
+  border: none;
+}
+hr.separation {
+  display: none;
+}
+button {
+  border:none;
+  background:none;
+  padding:0;
+  margin:0;
+  width:auto;
+  line-height:1;
+  font-size:0
+}
+input{
+	border:none;
+}
+button:hover {
+  cursor:pointer
+}
+img {
+  vertical-align: middle;
+}
+/* initialize */
+body {
+	-webkit-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+	color: #333;
+}
+p{
+	line-height: 1.5;
+}
+input[type="button"],input[type="submit"] {
+-webkit-appearance: none;
+}
+  
+/* common
+==========================*/
+body{
+	background: #F6F6F6;
+}
+.main{
+	font-size:14px;
+}
