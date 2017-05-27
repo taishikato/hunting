@@ -35,63 +35,36 @@ $encodeShareUrl = urlencode ($shareText);
 
 <!-- fb module -->
 <div id="fb-root"></div>
-<script>
-window.fbAsyncInit = function() {
-	FB.init({
-		appId      : '187588564737402',
-		channelUrl : '//wallet.yahoo.co.jp/promotion/channel.html',
-		status     : true,
-		cookie     : true,
-		xfbml      : true,
-  version: 'v2.8'
-	});
-
-};
-(function(d, s, id) {
-	var js, fjs = d.getElementsByTagName(s)[0];
-	if (d.getElementById(id)) return;
-	js = d.createElement(s); js.id = id;
-	js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.6";
-	fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
-</script>
-<!-- /fb module -->
-
-  <header class="">
-    <div class="headerImg">
-      <img src="img/logo.png" alt="hunting" width="100px">
-    </div>
-  </header>
-<div class='loadingWrap'>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.9";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!-- <div class='loadingWrap'>
   <div class="loader">Loading...</div>
-</div>
+</div> -->
 
 <div class="wrapper">
+  <section class="contents">
+    <h1>text</h1>
+    <p><img src="img/model1.jpg" width="100%" alt="藤田ニコル"></p>
+    <p>slidertext</p>
+    <p><img src="img/350x350.png"></p>
     <div class="footer">
-      <div class="footer_inner">
-
-        </p>
+    <div class="footer_inner">
         <div class="bx_sns"  id="sns_area">
-        <ul>
-          <li style="vertical-align: text-bottom;">
-          <a href="http://line.me/R/msg/text/?<?php echo$encodeShareUrl  ?>%0d%0a<?php echo$encodePageUrl  ?>" data-ylk="slk:line;pos:0"><img src="<?php echo $imageUrl; ?>images/line_82x20.png" alt="line" width="88px"></a>
-          </li>
-          <li class="sns-button fb">
-            <div class="fb-share-button" data-href="<?php echo $pageUrl; ?>" data-type="button" data-ylk="slk:fb;pos:0" ></div>
-          </li>
-          <li class="tw">
-            <a class="twitter-share-button" href="https://twitter.com/share"
-              data-url="<?php echo $pageUrl; ?>"
-              data-text="<?php echo $shareText; ?>"
-              data-lang="ja" data-ylk="slk:twitter;pos:0">
-              ツイート
-            </a>
-            <script type="text/javascript" src="https://platform.twitter.com/widgets.js" charsest="utf-8"></script>
-          </li>
-        </ul>
+          <ul>
+             <li><a href="https://twitter.com/share" class="twitter-share-button" data-text="test" data-hashtags="hunting">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+             </li>
+             <li>
+               <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">シェア</a></div>
+             </li>
+          </ul>
       </div>
   </div>
-  </div>
+</div> <!--footer-->
 </div>
 
 </body>
