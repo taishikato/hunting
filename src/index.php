@@ -1,13 +1,15 @@
 <?php
-$pageUrl = "";
-$pageTitle = "Hunting";
-$description = "サービスの説明文";
-if($cmp_flag==1){
-$shareText = "シェアテキスト";
+$pageUrl = '';
+$pageTitle = 'Hunting';
+$description = 'サービスの説明文';
+if ($cmp_flag==1) {
+    $shareText = 'シェアテキスト';
 }
-$keywords = "fashion";
+
+$keywords = 'fashion';
 $encodePageUrl = urlencode ($pageUrl);
 $encodeShareUrl = urlencode ($shareText);
+?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -24,8 +26,8 @@ $encodeShareUrl = urlencode ($shareText);
 <meta property="og:url" content="<?php echo $pageUrl; ?>">
 <meta property="og:image" content="<?php echo $ogUrl; ?>">
 <meta property="og:description" content="<?php echo $description; ?>"/>
-
 <link rel="stylesheet" href="css/reset.css" media="all">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <link rel="stylesheet" href="css/style.css" media="all">
 <link rel="stylesheet" href="<?php echo $imageUrl; ?>css/move-min.css">
 <mt:TimeDispForm to="2017/03/31 23:59:59">
@@ -50,7 +52,6 @@ $encodeShareUrl = urlencode ($shareText);
 <!-- <div class='loadingWrap'>
   <div class="loader">Loading...</div>
 </div> -->
-
 <div class="wrapper">
   <section class="contents">
     <h1>text</h1>
@@ -58,18 +59,24 @@ $encodeShareUrl = urlencode ($shareText);
     <p>slidertext</p>
     <p><img src="img/350x350.png"></p>
     <div class="footer">
-    <div class="footer_inner">
-        <div class="bx_sns"  id="sns_area">
-          <ul>
-             <li><a href="https://twitter.com/share" class="twitter-share-button" data-text="test" data-hashtags="hunting">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-             </li>
-             <li>
-               <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">シェア</a></div>
-             </li>
-          </ul>
-      </div>
-  </div>
-</div> <!--footer-->
+        <div class="footer_inner">
+            <div class="bx_sns"  id="sns_area">
+              <ul>
+                 <li><a href="https://twitter.com/share" class="twitter-share-button" data-text="test" data-hashtags="hunting">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                 </li>
+                 <li>
+                   <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">シェア</a></div>
+                 </li>
+              </ul>
+            </div>
+            <ul id="footerMenu" class="clearfix">
+                <li><img src="./img/home.png" /></li>
+                <li><img src="./img/model.png" /></li>
+                <li><img src="./img/timeline.png" /></li>
+            </ul>
+        </div>
+    </div> <!--footer-->
+
 </div>
 
 </body>
