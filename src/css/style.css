@@ -4,6 +4,10 @@ body {
   font-family: "ヒラノ角ゴ Pro W6", Hiragino Kaku Gothic Pro, Osaka, "ＭＳ Ｐゴシッ", sans-serif;
   background-color: #FCFCFC;
 }
+ul, li {
+  list-style: none;
+}
+.clearfix::after{content:"";display:block;clear:both;}
 .headerImg{
    display: block;
    text-align: center;
@@ -95,4 +99,80 @@ body {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
+}
+#footerMenu{
+  border-top: 1px solid #eee;
+  padding: 10px 0;
+}
+#footerMenu li {
+  width : 33.33333%; /* 未対応ブラウザ用フォールバック */
+  width : -webkit-calc(100% / 3);
+  width : calc(100% / 3);
+  float: left;
+  text-align: center;
+}
+#footerMenu li img {
+  width: 22%;
+}
+#switchMenu {
+  margin: 10px 0;
+}
+
+#switchMenu li {
+  float: left;
+}
+
+#switchMenu li {
+  padding-left: 5px;
+  border-left: 1px solid #d9d9d9;
+}
+
+#switchMenu li:nth-of-type(1) {
+  border-left: 0;
+  padding-left: 0;
+  margin-right: 5px;
+}
+
+.sigleItem .modelInfo a {
+  color: #0078BF;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.sigleItem .modelInfo {
+  text-align: left;
+}
+
+.sigleItem .modelInfo img {
+  max-width: 60px;
+  width: 100%;
+}
+
+.sigleItem .modelInfo modelName {
+  padding: 0;
+}
+
+.col-xs-2{
+  margin-bottom: 10px;
+}
+.sigleItem{
+  margin-bottom: 20px;
+}
+.smallIcon{
+  width: 30px;
+  display: inline-block;
+  float: left;
+}
+.tw{
+  margin: 0 10px;
+}
+.bx_sns{
+  width: 176px;
+  margin: 0 auto;
+
+}
+.bx_sns li{
+  width: 75px;
+  display: inline-block;
+  vertical-align: top;
 }
