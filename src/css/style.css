@@ -104,6 +104,7 @@ ul, li {
   border-top: 1px solid #eee;
   padding: 10px 0;
 }
+
 #footerMenu li {
   width : 33.33333%; /* 未対応ブラウザ用フォールバック */
   width : -webkit-calc(100% / 3);
@@ -151,7 +152,6 @@ ul, li {
 .sigleItem .modelInfo modelName {
   padding: 0;
 }
-
 .col-xs-2{
   margin-bottom: 10px;
 }
@@ -175,4 +175,4 @@ ul, li {
   width: 75px;
   display: inline-block;
   vertical-align: top;
-}
+}  

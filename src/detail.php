@@ -92,7 +92,6 @@ $encodeShareUrl = urlencode ($shareText);
             </ul>
         </div>
     </div> <!--footer-->
-
 </body>
 <script src="https://s.yimg.jp/l/jquery/2.2.0/jquery.min.js"></script>
 
