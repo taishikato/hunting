@@ -7,6 +7,7 @@ body {
 ul, li {
   list-style: none;
 }
+.clearfix::after{content:"";display:block;clear:both;}
 .headerImg{
    display: block;
    text-align: center;
@@ -99,14 +100,21 @@ ul, li {
     transform: rotate(360deg);
   }
 }
+#footerMenu{
+  border-top: 1px solid #eee;
+  padding: 10px 0;
+}
 
 #footerMenu li {
   width : 33.33333%; /* 未対応ブラウザ用フォールバック */
   width : -webkit-calc(100% / 3);
   width : calc(100% / 3);
   float: left;
+  text-align: center;
 }
-
+#footerMenu li img {
+  width: 22%;
+}
 #switchMenu {
   margin: 10px 0;
 }
@@ -144,7 +152,27 @@ ul, li {
 .sigleItem .modelInfo modelName {
   padding: 0;
 }
-
-#footerMenu li img {
-  width: 22%;
+.col-xs-2{
+  margin-bottom: 10px;
 }
+.sigleItem{
+  margin-bottom: 20px;
+}
+.smallIcon{
+  width: 30px;
+  display: inline-block;
+  float: left;
+}
+.tw{
+  margin: 0 10px;
+}
+.bx_sns{
+  width: 176px;
+  margin: 0 auto;
+
+}
+.bx_sns li{
+  width: 75px;
+  display: inline-block;
+  vertical-align: top;
+}  
