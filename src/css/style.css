@@ -15,6 +15,16 @@ ul, li {
    background-color: #fff;
    border-bottom: 1px solid #eee;
 }
+.container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.columnRight {
+    padding-right: 0;
+}
+.columnLeft {
+    padding-left: 0;
+}
 .contents{
   text-align: center;
   margin: 0 10px;
@@ -175,4 +185,4 @@ ul, li {
   width: 75px;
   display: inline-block;
   vertical-align: top;
-}  
+}
