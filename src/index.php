@@ -28,6 +28,8 @@ $encodeShareUrl = urlencode ($shareText);
 <meta property="og:description" content="<?php echo $description; ?>"/>
 <link rel="stylesheet" href="css/reset.css" media="all">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 <link rel="stylesheet" href="css/style.css" media="all">
 <link rel="stylesheet" href="<?php echo $imageUrl; ?>css/move-min.css">
 <mt:TimeDispForm to="2017/03/31 23:59:59">
@@ -56,8 +58,11 @@ $encodeShareUrl = urlencode ($shareText);
   <section class="contents">
     <h1>text</h1>
     <p><img src="img/model1.jpg" width="100%" alt="藤田ニコル"></p>
-    <p>slidertext</p>
-    <p><img src="img/350x350.png" width="350px"></p>
+    <div class="slider single-item">
+        <p class="sliderItem"><img src="img/350x350.png" width="350px"></p>
+        <p class="sliderItem"><img src="img/350x350.png" width="350px"></p>
+        <p class="sliderItem"><img src="img/350x350.png" width="350px"></p>
+    </div>
     <div class="footer">
         <div class="footer_inner">
             <div class="bx_sns"  id="sns_area">
@@ -80,6 +85,14 @@ $encodeShareUrl = urlencode ($shareText);
 </div>
 
 </body>
-<script src="https://s.yimg.jp/l/jquery/2.2.0/jquery.min.js"></script>
+<!--<script src="https://s.yimg.jp/l/jquery/2.2.0/jquery.min.js"></script>-->
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $('.single-item').slick();
+    });
+  </script>
 
 </html>
