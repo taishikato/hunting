@@ -28,9 +28,7 @@ $encodeShareUrl = urlencode ($shareText);
 <meta property="og:description" content="<?php echo $description; ?>"/>
 <link rel="stylesheet" href="css/reset.css" media="all">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
-<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 <link rel="stylesheet" href="css/style.css" media="all">
 <link rel="stylesheet" href="<?php echo $imageUrl; ?>css/move-min.css">
 <style>
@@ -114,12 +112,6 @@ $encodeShareUrl = urlencode ($shareText);
 <!--<script src="https://s.yimg.jp/l/jquery/2.2.0/jquery.min.js"></script>-->
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="slick/slick.min.js"></script>
-<script type="text/javascript">
-    $(function(){
-        $('.single-item').slick();
-    });
-  </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
 <script>
 	var mySwiper = new Swiper ('.swiper-container', {
