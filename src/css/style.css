@@ -159,7 +159,7 @@ ul, li {
   width: 100%;
 }
 
-.sigleItem .modelInfo modelName {
+.sigleItem .modelInfo .modelName {
   padding: 0;
 }
 .col-xs-2{
@@ -173,12 +173,31 @@ ul, li {
   display: inline-block;
   float: left;
 }
+/*timeline*/
+.modelItem{
+  text-align: center;
+  margin: 10px auto;
+}
+.modelItem .modelInfo a{
+  color: #0078BF;
+  font-weight: bold;
+  text-decoration: none;
+}
+.modelWear{
+  width: 300px;
+  margin: 20px auto 0;
+}
+.modelWear li{
+  width: 60px;
+  display: inline-block;
+  margin: 0 10px;
+}
 .tw{
   margin: 0 10px;
 }
 .bx_sns{
   width: 176px;
-  margin: 0 auto;
+  margin: 10px auto;
 
 }
 .bx_sns li{
