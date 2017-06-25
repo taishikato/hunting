@@ -30,8 +30,6 @@ $encodeShareUrl = urlencode ($shareText);
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <link rel="stylesheet" href="css/style.css" media="all">
 <link rel="stylesheet" href="<?php echo $imageUrl; ?>css/move-min.css">
-<mt:TimeDispForm to="2017/03/31 23:59:59">
-
 </head>
 <body>
 
@@ -54,44 +52,48 @@ $encodeShareUrl = urlencode ($shareText);
 </div> -->
 <div class="wrapper">
   <section class="contents">
-    <h1>text</h1>
-    <ul id="switchMenu" class="clearfix">
-      <li><img src="./img/off_1.png" width="30"></li>
-      <li><img src="./img/on_2.png" width="30"></li>
-    </ul>
-    <div class="container">
-        <div class="sigleItem col-xs-6 columnLeft">
-          <img src="img/model1.jpg" width="100%" alt="藤田ニコル">
-        </div>
-
-        <div class="sigleItem col-xs-6 columnRight">
-          <img src="img/model1.jpg" width="100%" alt="藤田ニコル">
-        </div>
-
-        <div class="sigleItem col-xs-6 columnLeft">
-          <img src="img/model1.jpg" width="100%" alt="藤田ニコル">
-        </div>
-
-        <div class="sigleItem col-xs-6 columnRight">
-          <img src="img/model1.jpg" width="100%" alt="藤田ニコル">
-        </div>
+    <div class="modelItem">
+      <div class="modelInfo clearfix">
+          <p class=""><img src="./img/nomalIcon.png" width="70"></p>
+          <p class="modelName"><a href="">aaaaaa</a></p>
+      </div>
     </div>
+
+    <div class="sigleItem clearfix">
+      <img src="img/model1.jpg" width="100%" alt="藤田ニコル">
+      <ul class="modelWear">
+        <li><a href=""><img src="./img/item1.jpg" width="60"></a></li>
+        <li><a href=""><img src="./img/item2.jpg" width="60"></a></li>
+        <li><a href=""><img src="./img/item1.jpg" width="60"></a></li>
+    </div>
+    <div class="sigleItem clearfix">
+      <img src="img/model1.jpg" width="100%" alt="藤田ニコル">
+      <ul class="modelWear">
+        <li><a href=""><img src="./img/item1.jpg" width="60"></a></li>
+        <li><a href=""><img src="./img/item2.jpg" width="60"></a></li>
+    </div>
+    <div class="sigleItem clearfix">
+      <img src="img/model1.jpg" width="100%" alt="藤田ニコル">
+      <ul class="modelWear">
+        <li><a href=""><img src="./img/item1.jpg" width="60"></a></li>
+    </div>
+  </section>
 </div><!-- wrapper -->
+<div class="bx_sns"  id="sns_area">
+  <ul>
+     <li class="tw"><a href="https://twitter.com/share" class="twitter-share-button" data-text="test" data-hashtags="hunting">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+     </li>
+     <li>
+       <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">シェア</a></div>
+     </li>
+  </ul>
+</div>
     <div class="footer clearfix">
         <div class="footer_inner">
-            <div class="bx_sns"  id="sns_area">
-              <ul>
-                 <li class="tw"><a href="https://twitter.com/share" class="twitter-share-button" data-text="test" data-hashtags="hunting">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-                 </li>
-                 <li>
-                   <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">シェア</a></div>
-                 </li>
-              </ul>
-            </div>
             <ul id="footerMenu" class="clearfix">
                 <li><a href="#"><img src="./img/home.png" /width="30"></a></li>
-                <li><a href="#"><img src="./img/model_active.png" /width="30"></a></li>
-                <li><a href="#"><img src="./img/timeline.png"/width="30"></a></li>
+                <li><a href="#"><img src="./img/model.png" /width="30"></a></li>
+                <li><a href="#"><img src="./img/timeline_active.png"/width="30"></a></li>
             </ul>
         </div>
     </div> <!--footer-->

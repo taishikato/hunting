@@ -30,8 +30,6 @@ $encodeShareUrl = urlencode ($shareText);
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <link rel="stylesheet" href="css/style.css" media="all">
 <link rel="stylesheet" href="<?php echo $imageUrl; ?>css/move-min.css">
-<mt:TimeDispForm to="2017/03/31 23:59:59">
-
 </head>
 <body>
 
@@ -55,8 +53,8 @@ $encodeShareUrl = urlencode ($shareText);
 <div class="wrapper">
   <section class="contents">
     <ul id="switchMenu" class="clearfix">
-      <li><img src="./img/off_1.png" width="30"></li>
-      <li><img src="./img/off_2_bkup.png" width="30"></li>
+      <li><img src="./img/on_1.png" width="30"></li>
+      <li><img src="./img/off_2.png" width="30"></li>
     </ul>
     <div class="sigleItem">
       <div class="modelInfo clearfix">
@@ -87,7 +85,7 @@ $encodeShareUrl = urlencode ($shareText);
             </div>
             <ul id="footerMenu" class="clearfix">
                 <li><a href="#"><img src="./img/home.png" /width="30"></a></li>
-                <li><a href="#"><img src="./img/model.png" /width="30"></a></li>
+                <li><a href="#"><img src="./img/model_active.png" /width="30"></a></li>
                 <li><a href="#"><img src="./img/timeline.png"/width="30"></a></li>
             </ul>
         </div>
