@@ -2,13 +2,13 @@
 $pageUrl = '';
 $pageTitle = 'Hunting';
 $description = 'サービスの説明文';
-if ($cmp_flag==1) {
+if ($cmp_flag === 1) {
     $shareText = 'シェアテキスト';
 }
 
 $keywords = 'fashion';
-$encodePageUrl = urlencode ($pageUrl);
-$encodeShareUrl = urlencode ($shareText);
+$encodePageUrl = urlencode($pageUrl);
+$encodeShareUrl = urlencode($shareText);
 ?>
 <!DOCTYPE html>
 <html lang="ja">
@@ -30,27 +30,8 @@ $encodeShareUrl = urlencode ($shareText);
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
 <link rel="stylesheet" href="css/style.css" media="all">
-<link rel="stylesheet" href="<?php echo $imageUrl; ?>css/move-min.css">
-<style>
-		.mb60{
-			margin-bottom: 60px;
-		}
-		.swiper-container{
-			text-align: center;
-		}
-		.swiper-container .swiper-slide img{
-			max-width: 100%;
-			height: auto;
-		}
-		.prettyprint{
-			border: none;
-			background: #fafafa;
-			color: #697d86;
-		}
-	</style>
 </head>
 <body>
-
 <!-- fb module -->
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
@@ -72,30 +53,30 @@ $encodeShareUrl = urlencode ($shareText);
   <section class="contents">
     <h1>text</h1>
     <p><img src="img/model1.jpg" width="100%" alt="藤田ニコル"></p>
-  				<div class="swiper-container">
-  				    <!-- Additional required wrapper -->
-  				    <div class="swiper-wrapper">
-  				        <!-- Slides -->
-  				        <div class="swiper-slide"><img src="img/350x350.png" alt=""></div>
-  				        <div class="swiper-slide"><img src="img/525x150.png" alt="" width="350"></div>
-  				        <div class="swiper-slide"><img src="img/700x200.png" alt="" width="350"></div>
-  				    </div>
-  				    <!-- If we need pagination -->
-  				    <div class="swiper-pagination"></div>
+    <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="img/350x350.png" alt=""></div>
+            <div class="swiper-slide"><img src="img/525x150.png" alt="" width="350"></div>
+            <div class="swiper-slide"><img src="img/700x200.png" alt="" width="350"></div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
 
-  				    <!-- If we need navigation buttons -->
-  				    <div class="swiper-button-prev"></div>
-  				    <div class="swiper-button-next"></div>
-  				</div>
-          <div class="bx_sns"  id="sns_area">
-            <ul>
-               <li><a href="https://twitter.com/share" class="twitter-share-button" data-text="test" data-hashtags="hunting">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-               </li>
-               <li>
-                 <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">シェア</a></div>
-               </li>
-            </ul>
-          </div>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+    <div class="bx_sns"  id="sns_area">
+      <ul>
+         <li><a href="https://twitter.com/share" class="twitter-share-button" data-text="test" data-hashtags="hunting">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+         </li>
+         <li>
+           <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">シェア</a></div>
+         </li>
+      </ul>
+    </div>
     <div class="footer">
         <div class="footer_inner">
             <ul id="footerMenu" class="clearfix">
@@ -114,20 +95,20 @@ $encodeShareUrl = urlencode ($shareText);
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
 <script>
-	var mySwiper = new Swiper ('.swiper-container', {
-    	loop: true,
-    	slidesPerView: 2,
-			spaceBetween: 10,
-			centeredSlides : true,
-	    pagination: '.swiper-pagination',
-	    nextButton: '.swiper-button-next',
-	    prevButton: '.swiper-button-prev',
-		breakpoints: {
-			767: {
-				slidesPerView: 1,
-				spaceBetween: 0
-			}
-		}
+    var mySwiper = new Swiper ('.swiper-container', {
+        loop: true,
+        slidesPerView: 2,
+            spaceBetween: 10,
+            centeredSlides : true,
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        breakpoints: {
+            767: {
+                slidesPerView: 1,
+                spaceBetween: 0
+            }
+        }
     })
 </script>
 

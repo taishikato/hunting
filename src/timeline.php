@@ -2,13 +2,13 @@
 $pageUrl = '';
 $pageTitle = 'Hunting';
 $description = 'サービスの説明文';
-if ($cmp_flag==1) {
+if ($cmp_flag === 1) {
     $shareText = 'シェアテキスト';
 }
 
 $keywords = 'fashion';
-$encodePageUrl = urlencode ($pageUrl);
-$encodeShareUrl = urlencode ($shareText);
+$encodePageUrl = urlencode($pageUrl);
+$encodeShareUrl = urlencode($shareText);
 ?>
 <!DOCTYPE html>
 <html lang="ja">
@@ -29,7 +29,6 @@ $encodeShareUrl = urlencode ($shareText);
 <link rel="stylesheet" href="css/reset.css" media="all">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <link rel="stylesheet" href="css/style.css" media="all">
-<link rel="stylesheet" href="<?php echo $imageUrl; ?>css/move-min.css">
 </head>
 <body>
 
